@@ -5,8 +5,6 @@ from openai import OpenAI
 from io import BytesIO
 import os
 
-api_key=st.secrets["api_key"]
-
 temperature=0.0
 max_tokens=1000
 frequency_penalty=0.0
