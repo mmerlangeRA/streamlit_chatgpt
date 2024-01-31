@@ -70,7 +70,7 @@ def main():
     if entered_api_key and entered_api_key != saved_api_key:
         with st.spinner('Initialisation OpenAI...'):
             saved_api_key = entered_api_key
-            client = initialize_openai_client(api_key)
+            client = initialize_openai_client(saved_api_key)
 
     model_choice = st.sidebar.selectbox("Choisis un modèle", ["gpt-3.5-turbo-1106", "gpt-4-turbo-preview"])
     user_query = st.text_input(label="Ton prompt",value=default_prompt)
